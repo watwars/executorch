@@ -13,7 +13,7 @@ from pathlib import Path
 
 import pytest
 import torch
-from executorch.backends.espressif.export import get_esp_fused_quant_recipe
+from executorch.backends.espressif.lowering import get_esp_fused_quant_recipe
 from executorch.backends.espressif.passes import EspPassManager
 from executorch.backends.test.harness import Tester
 from executorch.backends.test.harness.stages import (

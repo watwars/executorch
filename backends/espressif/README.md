@@ -35,7 +35,7 @@ backends/espressif/
   espnn_preprocess.py        EspNNBackend: BackendDetails.preprocess -> XTS3 graph
   partition/                 EspNNPartitioner: int8 regions -> delegate, rest -> CPU
   quantizer/                 EspNNQuantizer (delegate), EspFusedQuantizer (operator library)
-  lowering.py                to_espnn_edge(): export -> edge -> lowered program + report
+  lowering.py                delegate lowering, Fused Quant operator-library recipe + report
   serialization/             XTS3 format writer and parser, op lowering rules
   reference/                 bit-exact host model of the ESP-NN kernels and the CPU fallback
   espnn_runtime/             ESP-IDF component: XTS3 interpreter + ExecuTorch BackendInterface
